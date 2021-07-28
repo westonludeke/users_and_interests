@@ -1,0 +1,8 @@
+<h1 class="content-subhead"><%= @title %></h1>
+
+<div id="users-list">
+  <h2><u>List of Users</u>:</h2>
+  <% @contents.each do |key, value| %>
+    <h2><li><strong><a href="/users/<%= key %>"><%= key.capitalize %></a></strong></li></h2>
+  <% end %>
+</div>

@@ -1,0 +1,27 @@
+<h2><u>About <%= @username.capitalize %>:</u></h2>
+
+<div class="about-section">
+  <% @contents.each do |key, hsh| %>
+    <% if key.to_s == @username %>
+
+        <% hsh.each do |k, v| %>
+
+          <% if k.to_s == "email" %>  
+            <h3>Email Address: <%= v %></h3>
+          <% elsif k.to_s == "interests" %>  
+            <h3>Interests: <%= v.join(', ') %></h3>
+          <% end %>  
+
+        <% end %>  
+    <% end %>
+  <% end %>
+</div><br>
+
+<div>
+  <h2><u>Other Users</u>:</h2>
+  <% @contents.each do |key, hsh| %>
+    <% if key.to_s != @username %>
+        <h2><a href="/users/<%= key %>"><%= key.capitalize %></a></h2>
+    <% end %>
+  <% end %>
+</div>

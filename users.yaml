@@ -1,0 +1,33 @@
+---
+:jamy:
+  :email: jamy.rustenburg@gmail.com
+  :interests:
+  - woodworking
+  - cooking
+  - reading
+:nora:
+  :email: nora.alnes@yahoo.com
+  :interests:
+  - cycling
+  - basketball
+  - economics
+:hiroko:
+  :email: hiroko.ohara@hotmail.com
+  :interests:
+  - politics
+  - history
+  - birding
+:weston:
+  :email: weston-is-the-beston@gmail.com
+  :interests:
+  - ruby
+  - spanish
+  - weightlifting
+  - books
+:homer:
+  :email: homer.simpson@springfieldnuclear.com
+  :interests:
+  - duff
+  - bowling
+  - The B Sharps
+  - outer space

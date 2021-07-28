@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users and Interests: In Vaporwave Colors</title>
+
+    <link rel="stylesheet" href="/stylesheets/users_and_interests.css">
+    <h1>Users and Interests: In Vaporwave Colors</h1>
+  </head>
+
+  <body>
+    <div class="content">
+      <%= yield %>
+    </div><br>
+
+    <h3><u>User Stats:</u></h3>
+    <div class="user-stats">
+      <p>There are <%= @contents.keys.count %> total users with <%= count_interests %> total interests.</p>
+    </div>
+  </body>
+  <br>
+  <footer>
+    <h3><a href="/">Back to Home</a><br><br></h3>
+  </footer>
+</html>
